@@ -1,8 +1,11 @@
 # AlPhaD UI. 
 
 [Bootstrap](https://getbootstrap.com) Layouts and Sections.
+
+[**Live Demo**]()
  
 ### Sections:
+- Header Sections [sections/header](header.md)
 
 ### Layouts:
 
@@ -16,13 +19,13 @@
 
 all the way from **Syria**.
  
-*contact us:* 
+### contact us:  
 
 [alphadsy on themeforest](https://themeforest.net/user/alphadsy)
 
 [alphadsy.com](http://alphadsy.com)
 
-*our work:*
+### our work:
 
-*other repo here in GITHUB*
+### other repo here in GITHUB:
  
