@@ -2,10 +2,10 @@
 
 [Bootstrap](https://getbootstrap.com) Layouts and Sections.
 
-[**Live Demo**]()
+[**Live Demo**](https://alphadsy.github.io/index.html)
  
 ### Sections:
-- Header Sections [sections/header](header.md)
+- Header Sections [sections/header](sections/header/README.md)
 
 ### Layouts:
 
