@@ -2,10 +2,11 @@
 
 [Bootstrap](https://getbootstrap.com) Layouts and Sections.
 
-[**Live Demo**](https://alphadsy.github.io/index.html)
+[**Live Demo**](https://alphadsy.github.io/alpha-ui/)
  
 ### Sections:
-- Header Sections [sections/header](sections/header/README.md)
+- Header Sections [sections/header](https://github.com/alphadsy/alpha-ui/tree/master/sections/header/)
+- About Sections [sections/about](https://github.com/alphadsy/alpha-ui/tree/master/sections/about/)
 
 ### Layouts:
 

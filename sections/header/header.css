@@ -44,7 +44,6 @@ AlPhaD UI - Header
   width: 100vw;	
   height: 600px;	
 }
-
 .header .center {
 	position: absolute;
 	top: 50%;
@@ -54,7 +53,6 @@ AlPhaD UI - Header
 	z-index: 5; 
   padding: 1rem;
 }
-
 .header .left {
   position: absolute;
 	top: 50%;
@@ -64,7 +62,6 @@ AlPhaD UI - Header
 	z-index: 5; 
   padding: 1rem;
 }
-
 .header .right {
   position: absolute;
 	top: 50%;
@@ -74,7 +71,6 @@ AlPhaD UI - Header
 	z-index: 5; 
   padding: 1rem;
 }
-
 .header .scroll {
   position: absolute;
   top: 95%;
@@ -83,13 +79,11 @@ AlPhaD UI - Header
   color: #fff;
   font-size: 1.5rem;
 }
-
 /*=== Large devices (desktops, 992px and up) ===*/
 @media (min-width: 992px) {
 .header .center {
   width: 50%;
 }
-
 .header .left {
   position: absolute;
   top: 20%;
@@ -99,7 +93,6 @@ AlPhaD UI - Header
   transform:translate(0, 0);
   padding: 1rem;
 }
-
 .header .right {
   position: absolute;
   top: 20%;
@@ -109,7 +102,6 @@ AlPhaD UI - Header
   transform:translate(0, 0);
   padding: 1rem;
 }
-
 }
 
 /* =======================================
@@ -129,20 +121,16 @@ AlPhaD UI - Header
   background-size: cover;  
 	z-index: 0; 
 }
-
 #header1 .caption {
 	text-align: center;
   color: #fff;
 }
-
 #header1 .caption .title {
 	margin-bottom: 1.5rem;
 } 
-
 #header1 .caption .text {
 	margin-bottom: 1.5rem;
 }
-
 #header1 .caption .action {
 	margin-bottom: 1rem;
 	padding-left: 3rem;
@@ -165,41 +153,34 @@ AlPhaD UI - Header
   background-size: cover;  
 	z-index: 0; /* bottom layout */
 }
-
 #header2 .caption {
 	z-index: 5; 
   text-align: center;
   color: #fff;
 }
-
 #header2 .caption .title {
 	margin-bottom: 1.5rem;
 }
-
 #header2 .caption .text {
 	margin-bottom: 1.5rem;
 }
-
 #header2 .caption .action {
   display: flex;
 	margin-bottom: 1rem;
 	margin-left: 15%;
   width: 70%;
 }
-
 /*=== Large devices (desktops, 992px and up) ===*/
 @media (min-width: 992px) {
 #header2 .caption {
   text-align: left;
 }
-
 #header2 .caption .action {
   display: flex;
   margin-bottom: 1rem;
   margin-left: 0%;
   width: 80%;
 }
-
 }
 
 /* =======================================
@@ -217,25 +198,20 @@ AlPhaD UI - Header
   background-size: cover;  
 	z-index: 0; /* bottom layout */
 }
-
 #header3 .right {
 	display: none;
 }
-
 #header3 .caption {
 	z-index: 5; 
   text-align: center;
   color: #fff;
 }
-
 #header3 .caption .title {
 	margin-bottom: 1.5rem;
 } 
-
 #header3 .caption .text {
 	margin-bottom: 1.5rem;
 } 
-
 #header3 .caption .action {
 	margin-bottom: 1rem;
 	padding-left: 3rem;
@@ -246,11 +222,9 @@ AlPhaD UI - Header
 #header3 .caption {
   text-align: left;
 }
-
 #header3 .right {
   display: block;
 }
-
 }
 
 /* =======================================
@@ -268,21 +242,17 @@ AlPhaD UI - Header
   background-size: cover;  
 	z-index: 0; /* bottom layout */
 }
-
 #header4 .caption {
 	z-index: 5; 
   text-align: center;
   color: #fff;
 }
-
 #header4 .caption .title {
 	margin-bottom: 1.5rem;
 }
-
 #header4 .caption .text {
 	margin-bottom: 1.5rem;
 }
-
 #header4 .caption .action {
   display: flex;
   margin-bottom: 1rem;
@@ -295,7 +265,6 @@ AlPhaD UI - Header
   margin-left: 10%;
   width: 80%;
 }
-
 }
 
 /* =======================================
@@ -307,25 +276,20 @@ AlPhaD UI - Header
     linear-gradient(to right, #0f0c29, #302b63, #24243e);
   z-index: 0; 
 }
-
 #header5 .left {
   display: none;
 }
-
 #header5 .caption {
 	z-index: 5; 
   text-align: center;
   color: #fff;
 }
-
 #header5 .caption .title {
 	margin-bottom: 1.5rem;
 } 
-
 #header5 .caption .text {
 	margin-bottom: 1.5rem;
 } 
-
 #header5 .caption .action {
 	margin-bottom: 1rem;
 	padding-left: 3rem;
@@ -341,7 +305,6 @@ AlPhaD UI - Header
 #header5 .caption {
   text-align: left;
 }
-
 }
  
 /* =======================================
