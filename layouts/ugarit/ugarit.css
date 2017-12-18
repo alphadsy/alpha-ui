@@ -1,0 +1,192 @@
+/*
+AlPhaD UI - Ugarit layout
+
+* Version: 1.0.0
+* Build Date    : 18 12 2017
+* Last Update   : - []
+* Author: ALPhA D
+* Website: www.alphadsy.com
+* Github: www.github.com/alphadsy/
+* License : AGPL3  
+--------------------
+
+[Layout]
+
+* body /.background
+  + Page-container  
+    + Left-side 
+      - Brand  
+    + Right-side 
+      + Wall  
+        - Section  
+
+--------------------
+
+[Color codes]
+
+Background: #232741 (dark-blue)
+  
+--------------------
+
+[Typography]
+
+--------------------
+
+[content table]
+
+1- Extra small devices (portrait phones, less than 576px)
+2- Small devices (landscape phones, 576px and up)
+3- Medium devices (tablets, 768px and up)
+4- Large devices (desktops and landscape tablets, 992px and up)
+5- Extra large devices (large desktops and tv, 1200px and up)
+*/
+   
+/* =======================================
+1- Extra small devices (portrait phones, less than 576px)
+========================================*/
+
+/* === full page ===*/
+html,
+body {
+  height:100%;
+  width:100%;
+ 
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+.background {
+  background-color: #232741;
+
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+/* === page-container ===*/
+.page-container {
+  margin-bottom: 3vh;
+  margin-top: 2vh;
+  margin-right: 0vw;
+  margin-left: 0vw;
+
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.left-side,
+.right-side {
+  width: calc(100% - 12px);
+  padding: 6px; 
+  float: left;
+}
+
+/* === left-side ===*/
+.left-side {
+}
+.brand {
+  min-height: 20vh;
+  margin-top: 0vh;
+  
+  color: #fff;  
+  text-align: left;
+}
+
+/* === right-side ===*/
+.wall {
+  overflow-y: hidden;
+  height: 100%;
+  width: 100%;
+  
+  background-color: #fff;
+  color: #000;
+
+  border-radius: 15px;
+}
+
+/* === wall content ===*/
+.wall .section {
+  padding: 20px;
+
+  text-align: center;
+}
+/* intro */
+.section.intro {
+  /*
+  any spacial css for this section
+  */
+} 
+/* =======================================
+2- Small devices (landscape phones, 576px and up)
+========================================*/
+@media (min-width: 576px) {
+}
+
+/* =======================================
+3- Medium devices (tablets, 768px and up)
+========================================*/
+@media (min-width: 768px) {
+}
+
+/* =======================================
+4- Large devices (desktops, 992px and up)
+========================================*/
+@media (min-width: 992px) { 
+
+/* === 1-1 full page ===*/
+html,
+body {
+  overflow-y: hidden;
+}
+.background {
+}
+
+/* === page-container ===*/
+.page-container {
+  margin-bottom: 8vh;
+  margin-top: 7vh;
+  margin-right: 8vw;
+  margin-left: 8vw;
+
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.left-side,
+.right-side {
+  width: 50%;
+
+  padding:10px; 
+}
+
+/* === left-side ===*/
+.left-side {
+}
+.brand {
+  min-height: 40vh;
+  margin-top: 30vh;
+} 
+
+/* === wall ===*/
+.wall {
+  height: calc(85vh);
+  overflow-x: hidden!important;
+  
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+/* === wall content ===*/
+.wall .section {
+  min-height: calc(85vh);
+}
+/* intro */
+.section.intro {
+  /*
+  any spacial css for this section
+  */
+}
+
+}
+
+/* =======================================
+5- Extra large devices (large desktops, 1200px and up)
+========================================*/
+@media (min-width: 1200px) {  
+}
+ 

@@ -9,11 +9,12 @@
 - About Sections [sections/about](https://github.com/alphadsy/alpha-ui/tree/master/sections/about/)
 
 ### Layouts:
+- Ugarit Layout [layouts/ugarit](https://github.com/alphadsy/alpha-ui/tree/master/layouts/ugarit/)
 
 ### Credits:
-- [Bootstrap](https://getbootstrap.com) Layouts and Sections.
-- [font-awesome](https://http://fontawesome.io) Layouts and Sections.
-- [stocksnap](http://stocksnap.io/)
+- [Bootstrap](https://getbootstrap.com)  
+- [font-awesome](https://http://fontawesome.io)  
+- [stocksnap](http://stocksnap.io/)  
 
 ### AboutUs:
 **Alpha D** we make websites as it should be.
@@ -28,5 +29,7 @@ all the way from **Syria**.
 
 ### our work:
 
-### other repo here in GITHUB:
+### other GITHUB repo:
  
+### contributors:
+[شعيب بدران](https://github.com/shu3aybbadran) 

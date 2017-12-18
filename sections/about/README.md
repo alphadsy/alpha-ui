@@ -13,8 +13,8 @@ all Abouts have a main about class ".about",
 but each About has his own css-style by #about id   
 
 ### Credits:
-- [Bootstrap](https://getbootstrap.com) Layouts and Sections.
-- [font-awesome](https://http://fontawesome.io) Layouts and Sections.
+- [Bootstrap](https://getbootstrap.com)  
+- [font-awesome](https://http://fontawesome.io)  
 - [stocksnap](http://stocksnap.io/) for bg-image please check to their license for more information.
 
 ### AboutUs:
