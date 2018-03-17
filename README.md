@@ -7,6 +7,7 @@
 ### Sections:
 - Header Sections [sections/header](https://github.com/alphadsy/alpha-ui/tree/master/sections/header/)
 - About Sections [sections/about](https://github.com/alphadsy/alpha-ui/tree/master/sections/about/)
+- Advance Header [sections/about](https://github.com/alphadsy/alpha-ui/tree/master/sections/header2/)
 
 ### Layouts:
 - Ugarit Layout [layouts/ugarit](https://github.com/alphadsy/alpha-ui/tree/master/layouts/ugarit/)
