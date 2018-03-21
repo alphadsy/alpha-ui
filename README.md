@@ -9,6 +9,9 @@
 - About Sections [sections/about](https://github.com/alphadsy/alpha-ui/tree/master/sections/about/)
 - Advance Header [sections/Advance Header](https://github.com/alphadsy/alpha-ui/tree/master/sections/header2/)
 
+### UI:
+- Cards [ui/cards](https://github.com/alphadsy/alpha-ui/tree/master/ui/cards/)
+
 ### Layouts:
 - Ugarit Layout [layouts/ugarit](https://github.com/alphadsy/alpha-ui/tree/master/layouts/ugarit/)
 

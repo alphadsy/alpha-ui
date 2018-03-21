@@ -1,0 +1,168 @@
+/* 
+AlPhaD UI - card ui
+
+* Version: 1.0
+* Build Date    :  19-03-2017 
+* Last Update   :  - []
+* Author: ALPhA D
+* Website: www.alphadsy.com
+* Github: www.github.com/alphadsy/
+* Lic : MIT 
+
+[Layout]
+
+* body
+	- card / #card
+	  + caption 
+	    - title  
+      - text
+      - action
+    
+[Color codes]
+
+[Typography]
+
+[content table]
+
+- card main css 
+- #card1 css
+.
+.
+.    
+- demo css (for demo purpose only)
+
+*/
+
+/* =======================================
+ card
+========================================*/
+/*=== main card style ===*/
+.card {
+  position: relative;
+  border-radius: .5rem;
+  box-shadow: 0 1px 3px 0 #d4d4d5,0 0 0 1px #d4d4d5;
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  margin-bottom: 30px;
+}
+
+/* =======================================
+ card#1
+========================================*/
+/*=== card with border ===*/
+#card1 {
+	text-align: center;
+	padding: 50px 50px;
+  color:#fff;
+  background-color:#434A54;
+}
+
+#card1 .content {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+  padding: 15px 15px 25px 15px;
+}
+
+#card1::after {
+  position: absolute;
+  display: block;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  content: '';
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+} 
+
+/* =======================================
+ card#2
+========================================*/
+#card2 {
+	position: relative;
+	background: #d3cce3;
+	background: linear-gradient(to right, #d3cce3, #e9e4f0);
+  outline: 10px solid white;
+  outline-offset: -30px;
+}
+
+#card2::after {
+	position: absolute;
+	bottom: 20px;
+	left: 25%;
+  height: 10px;
+	display: block;
+  content: '';
+	z-index: 15;
+  background-color: white;
+}
+
+#card2 img {
+  height: inherit;
+  position: absolute;
+  top: 0%;
+  left: 25%;
+  z-index: 5;
+  filter: drop-shadow(1px 2px 1px 3px #aaa);
+}
+
+#card2 .caption {
+	text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+	transform:translate(-50%,-50%);
+  z-index: 10;
+}
+
+#card2 .caption .text {
+	color: #fff;
+	font-size: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+#card2 .caption .action {
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+ 
+/* =======================================
+demo css
+========================================*/
+
+/*=== for demo only ===*/
+.demo-title {
+  text-align: center;
+  color: #808080;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+}
+.card {
+  height: 400px;
+  width: 400px;
+  margin: 25px;
+  float: left;
+}
+.demo-more {
+  text-align: center;
+  color: #808080;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.demo-more i {
+  color: #696969;
+}
+a {
+  text-decoration: underline;
+  color: #696969;
+  font-weight: 600;
+}
+a:hover {
+  color: #696969;
+}
+body {
+  overflow-x: hidden;
+}
+
