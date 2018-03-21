@@ -1,9 +1,9 @@
 /* 
 AlPhaD UI - Header
 
-* Version: 1.0
+* Version: 2.0
 * Build Date    :  15-12-2017 
-* Last Update   :  - []
+* Last Update   :  21-3-2018 [add animation]
 * Author: ALPhA D
 * Website: www.alphadsy.com
 * Github: www.github.com/alphadsy/
@@ -35,7 +35,7 @@ AlPhaD UI - Header
 - demo css (for demo purpose only)
 
 */
- 
+
 /* =======================================
  header
 ========================================*/
@@ -101,6 +101,9 @@ AlPhaD UI - Header
   height: 60%;
   transform:translate(0, 0);
   padding: 1rem;
+}
+.delay {
+  animation-delay: 0.6s;
 }
 }
 

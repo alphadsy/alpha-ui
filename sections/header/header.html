@@ -1,9 +1,9 @@
 <!-- 
 AlPhaD UI - Header sections
 
-* Version: 1.0
+* Version: 2.0
 * Build Date    :  15-12-2017 
-* Last Update   :  - []
+* Last Update   :  21-3-2018 [add animation]
 * Author: ALPhA D
 * Website: www.alphadsy.com
 * Github: www.github.com/alphadsy/
@@ -22,6 +22,8 @@ AlPhaD UI - Header sections
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 <!-- font-awesome icons -->
 <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+<!-- animate css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <!-- header css -->
 <link rel="stylesheet" href="header.css">
 </head>
@@ -29,7 +31,8 @@ AlPhaD UI - Header sections
 
 <!-- demo-title -->
 <div class="demo-title">
-	<h1 class="display-1">Header</h1>
+	<h1 class="display-1">Header V2</h1>
+	<p>update note: Add animate.css</a></p>
 	<p>by <a href="#">@AlPhaD</a></p>
 	<p>contribute on github <a href="https://github.com/alphadsy/alpha-ui">alpha-ui</a></p>
 </div>
@@ -37,7 +40,7 @@ AlPhaD UI - Header sections
 <!-- header #1 -->
 <header class="header" id="header1">
 	<div class="center">
-		<div class="caption">
+		<div class="caption animated bounceInDown">
 			<h2 class="title display-3">Header title</h2>
 			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea accusamus enim hic, itaque eius quibusdam maxime veritatis maiores, ipsum porro beatae. Quisquam deleniti maxime velit tempora, molestias corrupti iusto!</p>
 			<button class="action btn btn-primary">click me</button>	
@@ -52,9 +55,9 @@ AlPhaD UI - Header sections
 <header class="header" id="header2">
 	<div class="left">
 		<div class="caption">
-			<h2 class="title display-3">Header title</h2>
-			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea accusamus enim hic, itaque eius quibusdam maxime veritatis maiores, ipsum porro beatae. Quisquam deleniti maxime velit tempora, molestias corrupti iusto!</p>
-			<div class="action input-group">
+			<h2 class="title display-3 animated bounceInLeft">Header title</h2>
+			<p class="text animated bounceInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea accusamus enim hic, itaque eius quibusdam maxime veritatis maiores, ipsum porro beatae. Quisquam deleniti maxime velit tempora, molestias corrupti iusto!</p>
+			<div class="action input-group  animated bounceInLeft delay">
 			  <input type="text" class="form-control" placeholder="Search for..." required>
 			  <span class="input-group-btn">
 			    <button class="btn btn-success" type="button">Go!</button>
@@ -68,14 +71,14 @@ AlPhaD UI - Header sections
 <!-- header #3 -->
 <header class="header" id="header3">
 	<div class="left">
-		<div class="caption">
+		<div class="caption animated bounceInLeft">
 			<h2 class="title display-3">Header title</h2>
 			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea accusamus enim hic, itaque eius quibusdam maxime veritatis maiores, ipsum porro beatae. Quisquam deleniti maxime velit tempora, molestias corrupti iusto!</p>
 			<button class="action btn btn-danger">click me</button>	
 		</div>	
 	</div>
 	
-	<div class="right">
+	<div class="right animated bounceInLeft delay">
 	  <img src="../../images/laptop.png" alt="" class="img-fluid">
 	</div>
 	<i class="scroll fa fa-angle-double-down"></i>
@@ -85,12 +88,12 @@ AlPhaD UI - Header sections
 <header class="header" id="header4">
 	<div class="center">
 		<div class="caption">
-			<h2 class="title display-3">Header title</h2>
-			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea accusamus enim hic, itaque eius quibusdam maxime veritatis maiores, ipsum porro beatae. Quisquam deleniti maxime velit tempora, molestias corrupti iusto!</p>
-			<form class="action">
-		    <input type="Email" class="form-control mr-1" id="email" placeholder="Email">		   
-	      <button type="submit" class="btn btn-warning">Submit</button>
-	    </form>
+			<h2 class="title display-3 animated bounceInLeft">Header title</h2>
+			<p class="text animated bounceInLeft">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea accusamus enim hic, itaque eius quibusdam maxime veritatis maiores, ipsum porro beatae. Quisquam deleniti maxime velit tempora, molestias corrupti iusto!</p>
+			<form class="action animated bounceInRight delay">
+		      <input type="Email" class="form-control mr-1" id="email" placeholder="Email">		   
+	          <button type="submit" class="btn btn-warning">Submit</button>
+	        </form>
 		</div>	
 	</div>
 	<i class="scroll fa fa-angle-double-down"></i>
@@ -98,11 +101,11 @@ AlPhaD UI - Header sections
 
 <!-- header #5 -->
 <header class="header" id="header5">
-	<div class="left">
+	<div class="left animated bounceInLeft">
 	  <img src="../../images/laptop.png" alt="" class="img-fluid">
 	</div>
 	
-	<div class="right">	
+	<div class="right animated bounceInRight">	
 		<div class="caption">
 			<h2 class="title display-3">Header title</h2>
 			<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum ea accusamus enim hic, itaque eius quibusdam maxime veritatis maiores, ipsum porro beatae. Quisquam deleniti maxime velit tempora, molestias corrupti iusto!</p>

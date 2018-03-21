@@ -91,12 +91,13 @@ AlPhaD UI - card ui
 #card2::after {
 	position: absolute;
 	bottom: 20px;
-	left: 25%;
+	left: 15%;
   height: 10px;
-	display: block;
+  width: 70%;
+  display: block;
   content: '';
-	z-index: 15;
-  background-color: white;
+  z-index: 15;
+  background-color: #fff;
 }
 
 #card2 img {

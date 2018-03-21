@@ -2,7 +2,7 @@
 
 Cards UI from ALPHAD
 
-[**Live Demo**](https://alphadsy.github.io/alpha-ui/ui/cards/cards.html)
+[**Live Demo**](https://alphadsy.github.io/alpha-ui/ui/cards/card.html)
  
 ### installation 
 just download about.html and about.css file and you are done!  
