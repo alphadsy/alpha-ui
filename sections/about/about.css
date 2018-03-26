@@ -1,9 +1,9 @@
 /* 
 AlPhaD UI - about
 
-* Version: 1.0
+* Version: 1.5
 * Build Date    :  15-12-2017 
-* Last Update   :  - []
+* Last Update   :  25-3-2018 [add some html and css]
 * Author: ALPhA D
 * Website: www.alphadsy.com
 * Github: www.github.com/alphadsy/
@@ -52,6 +52,27 @@ AlPhaD UI - about
 .row > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
+}
+.about .caption .title span {
+  font-weight: 500;
+  background: #C04848;
+  background: -webkit-linear-gradient(to right, #480048, #C04848);  
+  background: linear-gradient(to right, #480048, #C04848);  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  -moz-animation: gradanim 4s ease infinite;
+  animation: gradanim 4s ease infinite;
+}
+@-moz-keyframes gradanim {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes gradanim {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
 }
 .about .title {
   font-size: 3.5rem;
@@ -105,6 +126,13 @@ AlPhaD UI - about
 /* =======================================
  about#1
 ========================================*/
+#about1 .caption .social li {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+#about1 .caption .social li:hover {
+  border: 1px solid #aaa;
+}
 /* === Only Extra Small devices (mobile phones, up to 576px ) ===*/
 @media (max-width: 576px) {
 #about1 .img img {
@@ -114,16 +142,51 @@ AlPhaD UI - about
   margin-left: auto;
   margin-right: auto;
   border-radius: 50%;
-} 
+}
+#about1 .caption .social li {
+  border-radius: 50%;
+}
 }
 
 /* =======================================
  about#2
 ========================================*/
+#about2 .img img { 
+  filter: grayscale(1);
+  transition: all 2s ease-in;
+}
+#about2 .img img:hover { 
+  filter: grayscale(0.3);
+}
 #about2 .text {
-  font-size: 1.25rem;
-  font-weight: 300;
-  padding: 2rem;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  margin: 0 auto;
+  quotes: "\201C""\201D""\2018""\2019";
+  padding: 10px 20px;
+  line-height: 1.4;
+}
+#about2 .text::before {
+  content: open-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: -10px;
+  position: relative;
+  top: 30px;
+  color: #ccc;
+  font-size: 3em;
+}
+#about2 .text::after {
+  content: close-quote;
+  display: inline;
+  height: 0;
+  line-height: 0;
+  left: 10px;
+  position: relative;
+  top: 35px;
+  color: #ccc;
+  font-size: 3em;
 }
 /* === Only Small devices (landscape phones, 576px to 767px) ===*/
 @media (min-width: 576px) and (max-width: 767px) {
@@ -155,7 +218,10 @@ AlPhaD UI - about
   flex-direction: column !important;
   justify-content: space-around !important;
   padding: 1.5rem;
-} 
+}
+#about3 .caption .link {
+  text-align: left; 
+}
 /* === Only Small devices (landscape phones, 576px to 767px) ===*/
 @media (min-width: 576px) and (max-width: 767px) {
 #about3 .caption {
@@ -178,6 +244,10 @@ AlPhaD UI - about
   padding: 0px;
   color: #fff;
   background-color: rgba(220, 53, 69, 0.6);
+  transition: all 2s ease-in;
+}
+#about4 .mune:hover {
+  background-color: rgba(220, 53, 69, 1);
 } 
 #about4 .box {
   display: flex;  
@@ -216,6 +286,15 @@ demo css
 }
 .demo-more i {
   color: #696969;
+}
+.update-note {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  background-color: rgb(33, 33, 33);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 15px;  
 }
 a {
   text-decoration: underline;
