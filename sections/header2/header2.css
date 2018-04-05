@@ -79,11 +79,149 @@ AlPhaD UI - Header Advance
 .header .right {
 }
 }
-  
+ 
+
 /* =======================================
-  header#1
+ header#1
 ========================================*/
 #header1 {
+  background: linear-gradient(to right, #614385, #516395);
+  overflow: hidden;
+  background-size: 400% 400%;
+  -webkit-animation: gradanim-2 8s ease infinite;
+  -moz-animation: gradanim-2 8s ease infinite;
+  animation: gradanim-2 8s ease infinite;
+}
+@-moz-keyframes gradanim-2 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes gradanim-2 {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}  
+#header1 img {
+  position: absolute;
+  left: 50%;
+} 
+#header1 .circle {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 50vw;
+  height: 50%;
+}
+  /*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+#header1 {
+}
+#header1 img {
+  z-index: 5;
+} 
+#header1 .circle {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 40vw;
+  height: 40vw;
+  border-radius: 50%;
+  background: linear-gradient(to left, #ff512f, #dd2476);
+  background-size: 200% 200%;
+  -webkit-animation: gradanim-2 8s ease infinite;
+  -moz-animation: gradanim-2 8s ease infinite;
+  animation: gradanim-2 8s ease infinite;
+}
+@-moz-keyframes gradanim-2 {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes gradanim-2 {
+    0%{background-position:11% 0%}
+    50%{background-position:90% 100%}
+    100%{background-position:11% 0%}
+}  
+#header1 .caption {
+  color: #fff;
+  position: relative;
+  top: 15%;
+  left: -5%;
+  padding-right: 3rem;
+}
+}
+
+/* =======================================
+ header#2
+========================================*/
+#header2 {
+  background: linear-gradient(
+    to right,
+    #fff,
+    #fff 55%,
+    #F4F4F4 55%,
+    #F4F4F4 100%
+  );
+}
+#header2 img {
+  position: absolute;
+  left: 15%;
+}
+#header2 .caption {
+  color: #000;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  width: 70%;
+  z-index: 5;
+  text-align: center;
+}
+#header2 .caption .title {
+  opacity: .9;
+  font-size: 5rem;
+  font-weight: 600;
+}
+#header2 .caption p {
+  color: #aaa;
+  margin-top: 2rem;
+}
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+#header2 {
+  background: linear-gradient(
+    to right,
+    #fff,
+    #fff 20%,
+    #F4F4F4 20%,
+    #F4F4F4 55%,
+    #DAE6E6 55%,
+    #DAE6E6 80%,
+    #F4F4F4 80%,
+    #F4F4F4 100%
+  );
+}
+#header2 img {
+  left: 50%;
+  opacity: 1;
+}
+#header2 .caption {
+  top: 15%;
+  left: 10%;
+  width: 40%;
+  padding-right: 3rem;
+  z-index: 5;
+  text-align: left;
+}
+#header2 .caption p {
+  margin-top: 2rem;
+}  
+}
+  
+/* =======================================
+  header#3
+========================================*/
+#header3 {
   background: #000;
   background:
     /* gradient overlay */ 
@@ -97,7 +235,7 @@ AlPhaD UI - Header Advance
   background-size: cover;  
   z-index: 0; 
 }
-#header1 .center {
+#header3 .center {
   border-radius: 50%;
   width: 350px;
   height: 350px;
@@ -105,7 +243,7 @@ AlPhaD UI - Header Advance
   box-shadow: 0 16px 18px -6px rgb(15, 2, 2);
   background-color: #1b1616;
 }
-#header1 .caption {
+#header3 .caption {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -113,39 +251,35 @@ AlPhaD UI - Header Advance
   text-align: center;
   color: #fff;
 }
-#header1 .caption .title {
+#header3 .caption .title {
 } 
-#header1 .caption .text {
+#header3 .caption .text {
 }
 
- /* =======================================
- header#2
+/* =======================================
+ header#4
 ========================================*/
-#header2 {
+#header4 {
 }
-#header2 img {
+#header4 img {
   position: absolute;
-  left: 0%;
-  z-index: 5;
-} 
-#header2 .wow {
-  visibility: hidden;
+  left: 15%;
+  opacity: 0.6;
 }
-/*=== Large devices (desktops, 992px and up) ===*/
-@media (min-width: 992px) {
-#header2 {
-}
-#header2 img {
-  left: 10%;
-} 
-#header2 .wow {
+#header4 .caption {
+  color: #000;
   position: absolute;
-  left: 40%;
   top: 25%;
-  visibility: visible;
+  left: 15%;
+  width: 70%;
+  z-index: 5;
+  background-color: rgba(221, 221, 221, 0.103);
+  text-align: center;
+}
+#header4 .caption .title {
   opacity: .9;
   color: #eee;
-  font-size: 14rem;
+  font-size: 5rem;
   font-weight: 600;
   background: -webkit-linear-gradient(#c94b4b, #4b134f);
   -webkit-background-clip: text;
@@ -163,22 +297,45 @@ AlPhaD UI - Header Advance
     0%{background-position:11% 0%}
     50%{background-position:90% 100%}
     100%{background-position:11% 0%}
+}
+#header4 .caption p {
+  margin-top: 2rem;
+}
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+#header4 {
+}
+#header4 img {
+  left: 40%;
+  opacity: 1;
+}
+#header4 .caption {
+  top: 15%;
+  left: 15%;
+  width: 40%;
+  padding-right: 3rem;
+  z-index: 5;
+  text-align: left;
+}
+#header4 .caption p {
+  margin-top: 2rem;
+  margin-left: 1rem;
 }  
 }
-  
+
 /* =======================================
- header#3
+ header#5 - need more work! -
 ========================================*/
-#header3 {
+/* #header5 {
   margin: 1%;
 }
-#header3 .big-box {
+#header5 .big-box {
   width: 98%;
   float: left;
   margin-right: 1%;
   margin-bottom: 1%;
 }
-#header3 .box {
+#header5 .box {
   width: 48%;
   height: 48%;
   float: left;
@@ -186,75 +343,85 @@ AlPhaD UI - Header Advance
   margin-right: 1%;
   margin-bottom: 1%; 
 }
-#header3 .yellow {
+#header5 .yellow {
  background-color: rgb(236, 215, 18);
 }
-#header3 .gray {
+#header5 .gray {
   background-color: #ddd;
 }
-#header3 .text {
+#header5 .text {
   padding: 2rem;
 }
-#header3 .text p {
+#header5 .text p {
   padding-top: 1rem;
 }
-#header3 img {
+#header5 img {
   width: 100%;
   height: 100%;
 }
-/*=== Large devices (desktops, 992px and up) ===*/
+Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-#header3 .big-box {
+#header5 .big-box {
   width: 48%;
   height: 98%; 
 }
-#header3 .box {
-  width: 23%;
-}  
-}
-  
-/* =======================================
- header#4
-========================================*/
-#header4 {
-  background: linear-gradient(to right, #614385, #516395);
-  overflow: hidden;
-}
-#header4 img {
-  position: absolute;
-  left: 50%;
-} 
-#header4 .cirlce {
-  position: absolute;
-  left: 10%;
-  top: 10%;
-  width: 50vw;
-  height: 50%;
-}
-#header4 .caption {
-  color: #fff;
+#header5 .box {
   position: relative;
-  top: 15%;
-  left: -5%;
-  padding-right: 3rem;
+  width: 23%;
 }
-/*=== Large devices (desktops, 992px and up) ===*/
-@media (min-width: 992px) {
-#header4 {
-}
-#header4 img {
-  z-index: 5;
-} 
-#header4 .cirlce {
+#header5 .box .overlay {
   position: absolute;
-  left: 20%;
-  top: 20%;
-  width: 40vw;
-  height: 40vw;
-  background: linear-gradient(to right, #ff512f, #dd2476);
-  border-radius: 50%;
+  top: 5%;
+  bottom: 0;
+  left: 5%;
+  right: 0;
+  height: 90%;
+  width: 90%;
+  opacity: 0;
+  transition: .5s ease;
 }
+#header5 .box .overlay.text {
+  background-color: #008CBA;
 }
+#header5 .box .overlay.icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #eee;
+  font-size: 2rem;
+}
+#header5 .box:hover .overlay {
+  opacity: 1;
+}
+#header5 .box .overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.box.flip {
+  width: 100%;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+.box.flip:hover {
+  transform: rotateY(180deg);
+}
+.box.flip .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.box.flip .side.back {
+  padding: 1rem;
+  background-color: #ddd;
+  transform: rotateY(180deg);
+}  
+} */
 
 
 /* =======================================
@@ -277,6 +444,15 @@ demo css
 .demo-more i {
   color: #696969;
 }
+.update-note {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  background-color: rgb(33, 33, 33);
+  color: #fff;
+  border-radius: 10px;
+  padding: 0 15px;  
+}
 a {
   text-decoration: underline;
   color: #696969;
@@ -288,3 +464,6 @@ a:hover {
 body {
   overflow-x: hidden;
 }
+
+
+ 
