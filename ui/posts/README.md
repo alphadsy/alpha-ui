@@ -1,16 +1,16 @@
 # AlPhaD UI. 
 
-Cards UI from ALPHAD
+Posts UI from ALPHAD
 
-[**Live Demo**](https://alphadsy.github.io/alpha-ui/ui/cards/card.html)
+[**Live Demo**](https://alphadsy.github.io/alpha-ui/ui/posts/post.html)
  
 ### installation 
-just download card.html and card.css file and you are done!  
+just download post.html and post.css file and you are done!  
 
 ### usage
-all Cards have a main card class ".card",
+all Posts have a main post class ".post",
 
-but each card has his own css-style by #card id   
+but each post has his own css-style by #post id   
 
 ### Credits:
 - [Bootstrap](https://getbootstrap.com)  

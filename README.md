@@ -11,6 +11,7 @@
 
 ### UI:
 - Cards [ui/cards](https://github.com/alphadsy/alpha-ui/tree/master/ui/cards/)
+- Posts [ui/posts](https://github.com/alphadsy/alpha-ui/tree/master/ui/posts/)
 
 ### Layouts:
 - Ugarit Layout [layouts/ugarit](https://github.com/alphadsy/alpha-ui/tree/master/layouts/ugarit/)
