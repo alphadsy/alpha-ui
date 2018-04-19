@@ -33,30 +33,33 @@ AlPhaD UI - Posts UI
 ========================================*/
 .post {
   position: relative;
-  height: 500px; 
-  width: 75vw;
+  width: 92vw;
+  height: auto;
   margin: auto;
   margin-bottom: 1rem;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  margin-bottom: 3rem;
 }
 .post .caption {
   position: relative;
-  float: left;
   height: inherit;
-  padding: 2rem;
+  background-color: inherit;
+  padding: 10px;
 }
-.post .img-container {
+.post .content {
   position: relative;
-  float: left;
   height: inherit;
+  padding: 10px;
 }
-.post .img-container .img {
+.post .content .img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .post .author {
   position: relative;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .post .author .avatar {
   position: relative;
@@ -71,23 +74,64 @@ AlPhaD UI - Posts UI
   font-weight: 500;
   padding-left: 1rem;
 }
+.post .meta {
+  float: left;
+  padding-left: 1rem;
+  size: .6rem;
+  color: #000;
+}
+.post .caption .text {
+  margin: .5rem 0;
+}
+.post .category {
+  visibility: hidden;
+}
+
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+.post {
+  width: 75vw;
+  height: 500px; 
+}
+.post .caption {
+  float: left;
+  padding: 2rem;
+}
+.post .author {
+  margin-bottom: 5rem;
+}
+.post .author .avatar {
+}
+.post .author .name {
+}
+.post .caption .meta {
+}
 .post .caption .text {
   margin: 1rem 0;
 }
-.post .category {
+.post .content {
+  float: left;
+  padding: 0;
 }
-.post .meta {
-  size: .6rem;
+.post .content .img {
+  height: 100%;
+}
+.post .category {
+  visibility: visible;
+}
 }
 
 /* =======================================
  post#1
 ========================================*/
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
 #post1 {
+  background-color:#212226;
+  color: #fff;
 }
 #post1 .caption {
   width: 30%;
-  background-color:#212226;
 }
 #post1 .caption .meta {
   float: left;
@@ -95,9 +139,6 @@ AlPhaD UI - Posts UI
   color: #808080;
 }
 #post1 .caption .text {
-}
-#post1 .img-container {
-  width: 70%;
 }
 #post1 .category {
   position: absolute;
@@ -107,41 +148,60 @@ AlPhaD UI - Posts UI
   background-color: #808080;
   z-index: 5;
 }
-
-/*=== Large devices (desktops, 992px and up) ===*/
+#post1 .content {
+  width: 70%;
+}
+}
 
 /* =======================================
  post#2
 ========================================*/
+
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
 #post2 {
 }
 #post2 .caption {
   width: 30%;
-  background-color: #fff;
-  color: #212226;
 }
-#post2 .img-container {
+#post2 .content {
   width: 70%;
+}
+#post2 .caption .content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: auto;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+#post2 .author  {
+  margin: 2rem;
 }
 #post2 .author .avatar {
   float: none;
   width: 5rem;
   margin: 1rem;
 }
+#post2 .author .name {
+  float: none;
+}
 #post2 .caption .text {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  padding: 0;
-  transform: translate(-50%, -50%);
-  text-align: center;
   color: #212226;
+}
 }
 
 /* =======================================
  post#3
 ========================================*/
+
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
 #post3 {
+}
+#post3 .content {
+  width: 30%;
 }
 #post3 .author {
   padding: 2rem;
@@ -151,17 +211,14 @@ AlPhaD UI - Posts UI
   float: left;
   padding-left: 1rem;
 }
+#post3 .content .img {
+  position: absolute;
+  top: 0;
+}
 #post3 .caption {
   width: 70%;
   background-color:#212226;
   color: #fff;
-}
-#post3 .img-container {
-  width: 30%;
-}
-#post3 .img-container .img {
-  position: absolute;
-  top: 0;
 }
 #post3 .caption .text {
   position: absolute;
@@ -176,33 +233,28 @@ AlPhaD UI - Posts UI
   font-size: 1.2rem;
   font-weight: 400; 
 }
+}
 
 /* =======================================
  post#4
 ========================================*/
+
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
 #post4 {
 }
 #post4 .author {
   z-index: 5;
-}
-#post4 .caption {
-  width: 60%;
-  background-color:#fff;
-  color: #212226;
-}
-#post4 .author {
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 #post4 .author .meta {
   float: left;
   padding-left: 1rem;
 }
-#post4 .img-container {
-  width: 40%;
-}
-#post4 .img-container .img {
-  position: absolute;
-  top: 0;
+#post4 .caption {
+  width: 60%;
+  background-color:#fff;
+  color: #212226;
 }
 #post4 .caption .text {
   position: absolute;
@@ -231,47 +283,59 @@ AlPhaD UI - Posts UI
   margin-right: 100%;
   border-bottom: 2px solid #000;
 }
+#post4 .content {
+  width: 40%;
+}
+#post4 .content .img {
+  position: absolute;
+  top: 0;
+}
+}
 
 /* =======================================
  post#5
 ========================================*/
 #post5 {
-}
-#post5 .caption {
-  width: 30%;
   background-color:#212226;
   color: #fff;
 }
-#post5 .author {
-  z-index: 5;  
-}
 #post5 .author .meta {
-  float: left;
-  padding-left: 1rem;
-  color: #ddd;
+  color: #fff;
 }
-#post5 .images-container {
-  position: relative;
-  float: left;
-  height: inherit;
-  width: 70%;
-  padding: 5%;
-  background-color: #212226!important;
+#post5 .images {
+  overflow:hidden
 }
-#post5 .images-container .img {
+#post5 .images .img {
+  float: left;
   width: 50%;
-  height: 50%;
-  float: left;
-  opacity: .5;
-}
-#post5 .images-container .img:hover {
+  height: 150px;
   opacity: 1;
+}
+
+/*=== Large devices (desktops, 992px and up) ===*/
+@media (min-width: 992px) {
+#post5 {
+}
+#post5 .caption {
+  width: 30%;
+}
+#post5 .author {
 }
 #post5 .caption .text {
   color: #ddd;
 }
-
-/*=== Large devices (desktops, 992px and up) ===*/
+#post5 .content {
+  width: 70%;
+  padding: 2rem;
+}
+#post5 .images .img {
+  height: 50%;
+  opacity: .6;
+}
+#post5 .images .img:hover {
+  opacity: 1;
+}
+} 
 
 
 /* =======================================
@@ -279,6 +343,9 @@ demo css
 ========================================*/
 
 /*=== for demo only ===*/
+body {
+  background-color: #f8f8f8;
+}
 .demo-title {
   text-align: center;
   color: #808080;
@@ -286,7 +353,8 @@ demo css
   padding-bottom: 20vh;
 }
 .post {
-  box-shadow: 2px 2px 2px 2px #ddd;
+  border: 1px solid #eee;
+  /* box-shadow: 2px 2px 2px 2px #ddd; */
 }
 .demo-more {
   text-align: center;
